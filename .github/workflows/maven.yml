@@ -16,9 +16,9 @@ jobs:
         os: [ 'blacksmith-2vcpu-ubuntu-2204' ]
     name: Java ${{ matrix.Java }} (${{ matrix.os }})
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5  # v2
     - name: Set up Java
-      uses: useblacksmith/setup-java@v5
+      uses: useblacksmith/setup-java@4ef812391eff6e9737ba13bf0356d0f702877a64  # v5
       with:
         distribution: 'adopt'
         java-version: ${{ matrix.java }}
